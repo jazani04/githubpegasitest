@@ -1,134 +1,135 @@
-
 body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f5f7fa;
+    color: #333;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+header.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #012c55;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
 }
 
-.header {
-  background-color: #003366;
-  padding: 20px 0;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
 }
 
-.logo {
-  margin: 0;
-  color: #ffffff;
-  font-size: 28px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 10px;
-  padding: 0;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
 }
 
 .hero {
-  background: linear-gradient(to right, #004080, #0066cc);
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
+    background: linear-gradient(to right, #003366, #006699);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
 }
 
-.section {
-  padding: 60px 20px;
-  text-align: center;
+.btn {
+    background: white;
+    color: #003366;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s;
 }
 
-.section h2 {
-  color: #003366;
-  margin-bottom: 20px;
+.btn:hover {
+    background: #eee;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 30px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 30%;
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #012c55;
+    color: white;
 }
 
 input, textarea {
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-textarea {
-  resize: vertical;
-  height: 120px;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
 button {
-  background-color: #003366;
-  color: white;
-  border: none;
-  padding: 14px;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
+    padding: 1rem 2rem;
+    background: #012c55;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #00509e;
+    background: #014b8a;
 }
 
-.whatsapp {
-  margin-top: 20px;
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
 }
 
-.whatsapp a {
-  text-decoration: none;
-  background-color: #25d366;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 6px;
-  display: inline-block;
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+.slide-up {
+    animation: slideUp 1s ease-out;
 }
 
-.footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.floating-chat {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background-color: #25d366;
-  color: white;
-  font-size: 24px;
-  padding: 14px 16px;
-  border-radius: 50%;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  z-index: 1000;
-}
-
-.floating-chat:hover {
-  background-color: #1ebe5d;
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }

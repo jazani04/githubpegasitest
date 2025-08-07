@@ -1,53 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PEGASI Consultores - Inicio</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEGASI SAC - Consultoría e Ingeniería Industrial</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">PEGASI Consultores</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="mision.html">Misión</a></li>
-          <li><a href="vision.html">Visión</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header class="sticky">
+        <div class="container">
+            <h1>PEGASI SAC</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="mision.html">Misión</a>
+                <a href="vision.html">Visión</a>
+                <a href="contacto.html">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
 
-  <section class="hero" id="inicio">
-    <div class="container">
-      <h2>Ingeniería Industrial & Consultoría Estratégica</h2>
-      <p>Impulsamos la eficiencia, productividad e innovación en tu empresa.</p>
-    </div>
-  </section>
+    <section class="hero fade-in">
+        <div class="container">
+            <h2>Consultoría e Ingeniería Industrial</h2>
+            <p>Soluciones innovadoras para tu empresa.</p>
+            <a href="contacto.html" class="btn">Escríbenos</a>
+        </div>
+    </section>
 
-  <section class="section contact" id="contacto">
-    <div class="container">
-      <h2>Contáctanos</h2>
-      <form action="mailto:info@pegasiconsultores.com" method="post" enctype="text/plain">
-        <input type="text" name="nombre" placeholder="Tu nombre" required />
-        <input type="email" name="correo" placeholder="Tu correo electrónico" required />
-        <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
-        <button type="submit">Enviar Mensaje</button>
-      </form>
-    </div>
-  </section>
+    <section class="servicios slide-up">
+        <div class="container">
+            <h3>Servicios destacados</h3>
+            <div class="cards">
+                <div class="card">✔️ Optimización de procesos</div>
+                <div class="card">✔️ Gestión de calidad</div>
+                <div class="card">✔️ Ingeniería de planta</div>
+            </div>
+        </div>
+    </section>
 
-  <a class="floating-chat" href="https://wa.me/51992518733" target="_blank" title="Escríbenos por WhatsApp">💬</a>
+    <footer>
+        <p>&copy; 2025 PEGASI SAC. Todos los derechos reservados.</p>
+    </footer>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 PEGASI Consultores SAC. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+    <a href="https://wa.me/51992518733" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>
